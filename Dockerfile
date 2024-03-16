@@ -18,8 +18,10 @@ RUN \
     lame-dev \
     libshout-dev \
     git \
-    rtl-sdr
-
+    rtl-sdr \
+    ffmpeg \
+    nginx
+    
 COPY start_noaa.sh /start_noaa.sh
 COPY ezstream.xml /etc/ezstream.xml
 RUN chmod +x /start_noaa.sh
